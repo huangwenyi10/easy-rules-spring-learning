@@ -5,8 +5,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author ay
+ * @since 2021-09-07
+ */
 @Component
 public class SpringBeanUtil implements ApplicationContextAware {
+
     /**
      * 上下文对象实例
      */

@@ -11,6 +11,7 @@ import org.springframework.beans.factory.FactoryBean;
  * 原型RulesEngine FactoryBean
  */
 public class ProtoRulesEngineFactoryBean implements FactoryBean<RulesEngine> {
+
     Log log = LogFactory.getLog(MyRulesListener.class);
     public RulesEngine init() {
         log.info("create rule Engine");

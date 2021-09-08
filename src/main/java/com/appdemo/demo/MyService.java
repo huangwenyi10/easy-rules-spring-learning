@@ -3,9 +3,8 @@ package com.appdemo.demo;
 import org.springframework.stereotype.Component;
 
 /**
- * @author  dalonng
- *
- * mybean for ref
+ * @author  ay
+ * @since 2021-09-07
  */
 @Component
 public class MyService {

@@ -7,8 +7,13 @@ import org.jeasy.rules.api.Rules;
 import org.jeasy.rules.api.RulesEngineListener;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author ay
+ * @since 2021-09-07
+ */
 @Component
 public class MyRuleEngineListener implements RulesEngineListener {
+
     Log log = LogFactory.getLog(MyRuleEngineListener.class);
 
     @Override

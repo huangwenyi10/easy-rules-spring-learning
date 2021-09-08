@@ -7,7 +7,10 @@ import org.jeasy.rules.api.Rule;
 import org.jeasy.rules.api.RuleListener;
 import org.springframework.stereotype.Component;
 
-
+/**
+ * @author ay
+ * @since 2021-09-07
+ */
 @Component
 public class MyRulesListener implements RuleListener {
     Log log = LogFactory.getLog(MyRulesListener.class);

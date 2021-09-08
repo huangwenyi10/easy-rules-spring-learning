@@ -6,7 +6,12 @@ import org.jeasy.rules.api.RulesEngine;
 import org.jeasy.rules.core.DefaultRulesEngine;
 import org.springframework.beans.factory.FactoryBean;
 
+/**
+ * @author ay
+ * @since 2021-09-07
+ */
 public class RulesEngineFactoryBean implements FactoryBean<RulesEngine> {
+
     Log log = LogFactory.getLog(MyRulesListener.class);
 
     /**
@@ -14,8 +19,7 @@ public class RulesEngineFactoryBean implements FactoryBean<RulesEngine> {
      */
     private RulesEngine rulesEngine;
 
-    private void init()
-    {
+    private void init() {
         this.rulesEngine = new DefaultRulesEngine();
         log.info("create rule Engine");
         DefaultRulesEngine rulesEngine = new DefaultRulesEngine();
@@ -25,8 +29,7 @@ public class RulesEngineFactoryBean implements FactoryBean<RulesEngine> {
         rulesEngine.registerRulesEngineListener(new MyRuleEngineListener());
     }
 
-    public RulesEngineFactoryBean()
-    {
+    public RulesEngineFactoryBean() {
         this.init();
     }
 

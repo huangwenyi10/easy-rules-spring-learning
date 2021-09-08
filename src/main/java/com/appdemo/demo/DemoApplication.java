@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Scope;
 
 @SpringBootApplication
 public class DemoApplication {
+
 	Log log = LogFactory.getLog(MyRulesListener.class);
 	@Bean(name = "myEngine")
 	@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
@@ -23,8 +24,7 @@ public class DemoApplication {
 		return rulesEngine;
 	}
 	@Bean("myEngine2")
-	ProtoRulesEngineFactoryBean rulesEngineFactoryBean()
-	{
+	ProtoRulesEngineFactoryBean rulesEngineFactoryBean() {
 		return new ProtoRulesEngineFactoryBean();
 	}
 	public static void main(String[] args) {
